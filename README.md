@@ -111,19 +111,14 @@ Sistem harus dapat:
 
 ## 5. Business Rules
 
-| Kode  | Business Rule                                                                          |
-| ----- | -------------------------------------------------------------------------------------- |
-| BR-01 | PIN yang benar adalah `945313`.                                                        |
-| BR-02 | Setiap PIN yang salah menambah jumlah kesalahan sebanyak 1.                            |
-| BR-03 | Jika PIN benar, jumlah kesalahan PIN direset menjadi `0`.                              |
-| BR-04 | Akun diblokir setelah PIN salah sebanyak 3 kali.                                       |
-| BR-05 | Transaksi tidak dapat dilakukan jika akun sudah diblokir.                              |
-| BR-06 | Transaksi ditolak jika nominal transaksi melebihi sisa limit.                          |
-| BR-07 | Transaksi ditolak jika saldo lebih kecil dari nominal transaksi.                       |
-| BR-08 | Jika transaksi berhasil, saldo dikurangi sesuai nominal transaksi.                     |
-| BR-09 | Jika transaksi berhasil, sisa limit dikurangi sesuai nominal transaksi.                |
-| BR-10 | Transaksi yang gagal tidak mengurangi saldo maupun limit.                              |
-| BR-11 | PIN yang benar setelah sebelumnya salah akan mereset jumlah kesalahan PIN menjadi `0`. |
+| Kode      | Business Rule                                                                          |
+| --------- | -------------------------------------------------------------------------------------- |
+| **BR-01** | PIN yang benar adalah `945313`.                                                        |
+| **BR-02** | Jika PIN salah sebanyak 3 kali, akun akan diblokir.                                    |
+| **BR-03** | Transaksi ditolak jika nominal melebihi sisa limit harian.                             |
+| **BR-04** | Transaksi ditolak jika saldo tidak mencukupi.                                          |
+| **BR-05** | Jika transaksi berhasil, saldo dan sisa limit akan dikurangi sesuai nominal transaksi. |
+
 
 ---
 
