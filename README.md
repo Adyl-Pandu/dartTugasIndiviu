@@ -497,7 +497,7 @@ Program memiliki 8 skenario pengujian:
 
 **Adyl Pandu Setiawan**
 
-Repository ini dibuat sebagai tugas pembelajaran pemrograman Dart dan penerapan konsep **Computational Thinking**.
+Repository ini dibuat sebagai tugas pembelajaran pemrograman Dart.
 
 ---
 
